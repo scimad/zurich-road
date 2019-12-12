@@ -4,14 +4,15 @@ typedef std::list<int> INTLIST;
 
 int display(const INTLIST& c)
 {
-int z = 0;
-// std::list<int>::const_iterator pos;
-// Counter
-// Iterator
-for( auto pos = c.begin(); pos != c.end(); pos++, z++)
-std::cout << *pos << std::endl;
-std::cout << std::endl;
-return z;
+    // Counter
+    int z = 0;
+
+    // std::list<int>::const_iterator pos;
+    // Iterator or can use auto keyword as below
+    for( auto pos = c.begin(); pos != c.end(); pos++, z++)
+    std::cout << *pos << std::endl;
+    std::cout << std::endl;
+    return z;
 }
 
 int main(){
