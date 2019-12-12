@@ -1,7 +1,7 @@
-project (read_write)
+project (cv2-io)
 cmake_minimum_required(VERSION 2.8)
 
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
-add_executable(read-write read_write.cpp)
-target_link_libraries( read-write ${OpenCV_LIBS})
+add_executable(read_write read_write.cpp)
+target_link_libraries( read_write ${OpenCV_LIBS})
