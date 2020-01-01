@@ -23,10 +23,9 @@ int main(int argc, char** argv){
         
         // cv::namedWindow("named-window", cv::WINDOW_FULLSCREEN);
         cv::imshow("Original Image", img);
-        
+        cv::waitKey(0);
         cv::Mat img_gray = cv::imread(argv[1], cv::IMREAD_GRAYSCALE);
         cv::imshow("Grayscale", img_gray);        
-        
         cv::waitKey(0);
         
         cv::Mat flipped_hor(img_gray.rows , img_gray.cols, CV_8UC1, cv::Scalar(0));
