@@ -29,13 +29,25 @@ int main(int argc, char** argv){
         cv::waitKey(0);
         
         cv::Mat flipped_hor(img_gray.rows , img_gray.cols, CV_8UC1, cv::Scalar(0));
+        cv::Mat flipped_ver(img_gray.rows , img_gray.cols, CV_8UC1, cv::Scalar(0));
+
+        std::cout << "succedded creating flipped_hor" << std::endl;
+
+        int i, j;
+        for (i=0; i<flipped_hor.rows; i++){
+            for (j=0; j<flipped_hor.cols; j++){
+                flipped_hor.at<uchar>(i,j) = img_gray.at<uchar>(i, img_gray.cols-j);
+                flipped_ver.at<uchar>(i,j) = img_gray.at<uchar>(img_gray.rows-i, j);
+            }
+        }
+        cv::imshow("Transformed", flipped_hor);
+        cv::waitKey(0);
+
+        cv::imshow("Transformed", flipped_ver);
+        cv::waitKey(0);
+
         
 
-        //TODO: Fill up the above matrix now
-
-
-        std::cout << flipped_hor << std::endl;
-        std::cout << "succedded creating flipped_hor" << std::endl;
 
         return 0;
 
