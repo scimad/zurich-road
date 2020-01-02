@@ -43,6 +43,8 @@ int main(int argc, char** argv){
             }
         }
 
+        //TODO: Lot of optimization and enhancement can be done here
+
         cv::imshow("Rotated", img_rotated);
         cv::waitKey(0);
         cv::destroyAllWindows();
