@@ -10,7 +10,7 @@ int main(int argc, char** argv){
     {
         cv::Mat barca_img;
         std::string filename("../sample-data/barca.jpg");
-        barca_img = cv::imread(filename, cv::IMREAD_GRAYSCALE);
+        barca_img = cv::imread(filename);
         if (!barca_img.data)
         {
             cout <<"Couldn't open the image" <<endl;
@@ -19,8 +19,11 @@ int main(int argc, char** argv){
         cv::imshow("barca", barca_img);
         cv::waitKey(0);
 
-        //TODO : Inverse the gray value of the grayscale image
-        //TODO : Save the inverted file
+        cv::Mat inv_img(cv::Size(barca_img.size()), CV_8UC1);
+        inv_img = cv::Mat(cv::Size(barca_img.size()), CV_8UC3,cv::Scalar(255,255,255)) - barca_img;
+
+        cv::imshow("inv-barca", inv_img);
+        cv::waitKey(0);
 
         return 0;
 
