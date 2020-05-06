@@ -6,5 +6,5 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 add_executable(read_write read_write.cpp)
 target_link_libraries( read_write ${OpenCV_LIBS})
 
-add_executable(inv_gray inverse_gray.cpp)
-target_link_libraries( inv_gray ${OpenCV_LIBS})
+add_executable(inv_rgb inverse_rgb.cpp)
+target_link_libraries( inv_rgb ${OpenCV_LIBS})
