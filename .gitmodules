@@ -1,0 +1,3 @@
+[submodule "neural-networks/NN-basic/lib/MyNN"]
+	path = neural-networks/NN-basic/lib/MyNN
+	url = git@github.com:scimad/MyNN.git
