@@ -2,4 +2,5 @@
 **/build/
 
 #IDE Stuffs
-.vscode/
+**/.vscode/
+**/.idea/
