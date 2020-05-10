@@ -1,4 +1,4 @@
-//Inheritance
+//Type Conversion in Class Hierarchies
 /*
 Author        : scimad2.71@gmail.com
 Written       : 9th May, 2020
