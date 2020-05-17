@@ -1,4 +1,4 @@
-//Inheritance
+//Abstract Classes
 /*
 Author        : scimad2.71@gmail.com
 Written       : 10th May, 2020
