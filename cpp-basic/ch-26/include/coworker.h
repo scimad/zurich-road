@@ -1,13 +1,7 @@
-//Abstract Classes
-/*
-Author        : scimad2.71@gmail.com
-Written       : 10th May, 2020
-Last Modified : 10th May, 2020 
-*/
-#include <iostream>
-#include <string>
-using namespace std;
-#include "include/coworker.h"
+//coworker.h Defining the abstract class Coworker
+#ifndef _COWORKER_H
+#define _COWORKER_H
+
 #include <string>
 #include <iostream>
 using namespace std;
@@ -75,19 +69,4 @@ class Employee : public Coworker
         Employee& operator= (const Employee& );
 };
 
-int main(int argc, char const *argv[])
-{
-    // Coworker* felPtr[3];
-    // felPtr[0] = new Laborer();
-    // string s = "Ram";
-    // felPtr[1] = new Laborer(s);
-    // felPtr[2] = new Employee("Mad", 50000.0);
-
-    // Vec* v[2];
-    // v[1] = new Complex();
-    // v[0] = new Complex(1,2);
-
-    Coworker* testPtr[2];
-    testPtr[0] = new Laborer("55");
-    return 0;
-}
+#endif
