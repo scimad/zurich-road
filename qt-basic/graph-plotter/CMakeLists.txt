@@ -19,7 +19,7 @@ find_package(Qt5 COMPONENTS Widgets Quick REQUIRED)
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
-qt5_add_resources(QT_RESOURCES src/customgeometry.qrc)
+qt5_add_resources(QT_RESOURCES res/customgeometry.qrc)
 
 add_executable(plotter
     include/beziercurve.hpp

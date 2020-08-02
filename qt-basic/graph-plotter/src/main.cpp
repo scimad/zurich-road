@@ -16,7 +16,7 @@ int main(int argc, char **argv)
     QSurfaceFormat format = view.format();
     format.setSamples(16);
     view.setFormat(format);
-    view.setSource(QUrl(QStringLiteral("qrc:/src/main.qml")));
+    view.setSource(QUrl(QStringLiteral("qrc:/res/main.qml")));
     view.show();
 
     app.exec();
