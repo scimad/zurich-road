@@ -1,4 +1,4 @@
-#Graph Plotter using QT and cmake
+# Graph Plotter using QT and cmake
 
 (*This project uses the example from the author of the  **QCustomPlot** library.*)
 
