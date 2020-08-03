@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
     QQuickView view;
     QSurfaceFormat format = view.format();
-    format.setSamples(16);
+    format.setSamples(5);
     view.setFormat(format);
     view.setSource(QUrl(QStringLiteral("qrc:/res/main.qml")));
     view.show();
