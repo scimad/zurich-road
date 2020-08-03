@@ -65,7 +65,7 @@
 #include <QtCore/QStack>
 #include <QtCore/QCache>
 #include <QtCore/QMargins>
-#include <QtCore/qmath.h>
+#include <qmath.h>
 #include <limits>
 #include <algorithm>
 #ifdef QCP_OPENGL_FBO
@@ -86,7 +86,7 @@
 #  include <QtGui/QPrinter>
 #  include <QtGui/QPrintEngine>
 #else
-#  include <QtCore/QtNumeric>
+#  include <QtNumeric>
 #  include <QtWidgets/QWidget>
 #  include <QtPrintSupport/QtPrintSupport>
 #endif
