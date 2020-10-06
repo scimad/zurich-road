@@ -45,7 +45,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
-add_executable(helloworld main.cpp mainwindow.cpp mainwindow.ui resources.qrc)
+add_executable(helloworld main.cpp mainwindow.cpp mainwindow.ui res.qrc)
 
 target_link_libraries(helloworld Qt5::Widgets)
 
@@ -70,7 +70,7 @@ QT5_WRAP_UI(UI_SRC
 )
 
 QT5_ADD_RESOURCES(RES_SRC
-  resources.qrc
+  res.qrc
 )
 
 add_executable(helloworld ${MOC_FILES} main.cpp mainwindow.cpp ${UI_SRC} ${RES_SRC})
