@@ -79,3 +79,6 @@ target_link_libraries(helloworld Qt5::Widgets)
 ```
 
 * In addition to all these, sometimes, you might need to make sure that the `CMAKE_PREFIX_PATH` is pointing to directory where your `Qt5Config.cmake` is located in your `Qt5` installation.
+
+
+Also, for the record, here's link to someone else's [Qt-CMake-HelloWorld](https://github.com/jasondegraw/Qt-CMake-HelloWorld).
